@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./js/main.js" type="module" defer></script>
+  </head>
+  <body>
+    <!-- 1 -->
+    <form id="drink-form">
+        <label for="d-select">Виберіть напій:</label>
+        <select id="d-select">
+          <option value="coffee">Кава</option>
+          <option value="tea">Чай</option>
+          <option value="juice">Сік</option>
+        </select>
+      </form>
+      <p id="message"></p>
+      
+    <!-- 2 -->
+    <div class="form-section">
+      <label for="day-input">Введіть день тижня:</label>
+      <input type="text" id="day-input" placeholder="Наприклад: понеділок" />
+      <button onclick="checkDay()">Перевірити</button>
+      <p id="day-message"></p>
+    </div>
+    <!-- 3 -->
+    <label for="day-input">Введіть день тижня:</label>
+    <input type="number" id="inputSeason" />
+    <p id="result"></p>
+    <button id="btnSeason">Check season</button>
+    <br /><br />
+    <!-- 4 -->
+    <label for="month-input">Введіть номер місяця:</label>
+    <input type="number" id="inputMonth" />
+    <p id="resultMonth"></p>
+    <button id="btnMonth">Check month</button>
+    <!-- 5 -->
+    <label for="color-input">Введіть назву кольору:</label>
+    <input type="text" id="color-input" placeholder="Наприклад, червоний" />
+    <button id="check-color">Перевірити</button>
+    <p id="color-message"></p>
+
+    <br><br>
+    <!-- 6 -->
+    <div>
+        <label for="number1">Перше число:</label>
+        <input type="number" id="number1" placeholder="Введіть перше число" />
+      </div>
+      <div>
+        <label for="number2">Друге число:</label>
+        <input type="number" id="number2" placeholder="Введіть друге число" />
+      </div>
+      <div>
+        <label for="operation">Операція:</label>
+        <select id="operation">
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="*">*</option>
+          <option value="/">/</option>
+        </select>
+      </div>
+      <button id="calculate">Обчислити</button>
+      <p id="resultN"></p>
+      
+  </body>
+</html>

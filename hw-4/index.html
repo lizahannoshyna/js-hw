@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="./js/main.js" defer></script>
+</head>
+<body>
+    <form class="form">
+        <label for="first-field_text">First field</label>
+        <input type="number" id="first-field_number" placeholder="type number" required>
+        <label for="second-field_text">Second field</label>
+        <input type="number" id="second-field_number" placeholder="type number" required>
+        <button type="button" id="btn" >Перевірити</button>
+        <p id="message"></p>
+    </form>   
+<hr>
+    <form class="form">
+        <label for="first-field_text">Text field</label>
+        <input type="text" id="field_text" placeholder="type text" required>
+        <button type="button" id="btn_text" >Перевірити</button>
+    </form>
+    
+<hr>
+    <form class="form">
+        <label for="third-field_text">First field</label>
+        <input type="number" id="third-field_number" placeholder="type number" required>
+        <button type="button" id="btn-third" >Перевірити</button>
+    </form>
+    <hr>
+<!-- Використання event.preventDefault() у функції validateForm(event) дозволяє зупинити звичайне надсилання форми, щоб виконати додаткову перевірку.-->
+    <form onsubmit="validateForm(event)"> 
+        <label for="name">Ім'я:</label>
+        <input type="text" id="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" required>
+        <button type="submit" id="button">Відправити</button>
+    </form>
+</body>
+</html>
